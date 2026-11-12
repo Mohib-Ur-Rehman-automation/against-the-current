@@ -61,7 +61,7 @@ Settings are saved in your own browser and sent nowhere.
 
 ## How it was made
 
-The idea, direction and playtesting are by Mohib Ur Rehman, from an old design note of his about a boy crossing a flooded town. The code was written by Claude Fable 5.2 (Anthropic) in November 2026. The rules were tuned by running an automated player through every street before any person played it.
+The idea, direction and playtesting are by Mohib Ur Rehman, from an old design note of his about a boy crossing a flooded town. The code was written by Claude (Anthropic). The rules were tuned by running an automated player through every street before any person played it.
 
 ## Known limits
 
