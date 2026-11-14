@@ -2,11 +2,11 @@
 
 # Against the Current
 
-A flooded town, a kid in a yellow raincoat, and somewhere dry at the far end. A browser game in one HTML file, no install.
+A flooded town, a kid in a yellow raincoat, and somewhere dry at the far end. A 3D browser game in one HTML file, no install.
 
 **Play it:** https://mohib-ur-rehman-automation.github.io/against-the-current/
 
-<img src="screenshot.png" alt="A tall wave coming down the street while the kid stands on a cart" width="100%">
+<img src="screenshot.png" alt="A tall wave rolling down the spillway at night while the kid stands on a cart" width="100%">
 
 ## How to play
 
@@ -50,12 +50,16 @@ In the second arena, every cluster of shelter is missing one answer, so you have
 
 ## What is in the file
 
-Everything is in `index.html`: plain JavaScript on a 2D canvas, no libraries, no build step, no server.
+Everything is in `index.html`: no build step, no server, no image or model files. The world is drawn in 3D with [Three.js](https://threejs.org/), loaded from a CDN, so the game needs an internet connection to start.
 
-- **Characters:** drawn in code and animated, no image files.
+- **Look:** toon-shaded 3D with a tilted camera. The water reflects the street, the lamps and the shop windows.
+- **Characters and props:** built in code from simple shapes and animated, no model files.
 - **Streets:** ten generated layouts, each with its own current: still, with you, against you, sideways, or turning.
+- **One day:** the light follows a single day across the ten streets, from grey morning drizzle through the storm at its darkest to golden light at the end.
+- **Rules:** the game rules are the same code as the first, 2D version. Only the drawing changed.
+- **Graphics setting:** High, Medium or Low in the pause menu. The game also steps down by itself on a slow machine.
 - **Sound:** a generated score and all effects, synthesised in the browser. No audio files. Music and sounds have separate sliders in the pause menu.
-- **Font:** Fredoka from Google Fonts. Offline, it falls back to a system font.
+- **Fonts:** Lilita One and Fredoka from Google Fonts. If they fail to load, it falls back to a system font.
 
 Settings are saved in your own browser and sent nowhere.
 
@@ -65,7 +69,8 @@ The idea, direction and playtesting are by Mohib Ur Rehman, from an old design n
 
 ## Known limits
 
-- Tested in Chrome on a laptop and at phone size. Firefox and Safari are untested, and touch was only simulated.
+- Tested in Chrome at laptop and phone sizes. Firefox and Safari are untested, and touch was only simulated.
+- It needs WebGL. Speed on older laptops and phones is untested; use the Graphics setting if it runs slowly.
 - The characters are posed by code, so they move simply.
 - The original idea had 50 levels and a town to build up. This version has ten streets and no building.
 
